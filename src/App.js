@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/App.css';
+import './assets/css/Responsive.css';
+import Login from './pages/Login';
+import ResetPassword from './pages/ResetPassword';
+import Dashboard from './pages/Dashboard';
+
+
+export const RoutesPath = {
+  indexURL: '/',
+  resetPassword: '/reset-password',
+  dashboard: '/dashboard',
+  
+}
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route index element={<Login />} />
+      <Route path={RoutesPath.dashboard} element={<Dashboard />} />
+      <Route path={RoutesPath.resetPassword} element={<ResetPassword />} />
+    </Routes>
   );
 }
 

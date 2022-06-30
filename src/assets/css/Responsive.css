@@ -1,0 +1,173 @@
+@media(min-width:992px)
+{
+    .left-panel-col
+    {
+        flex: 0 0 256px;
+        max-width: 256px;
+    }
+    .right-content-col
+    {
+        flex: 0 0 calc(100% - 256px);
+        max-width: calc(100% - 256px);
+        margin-left: 256px;
+    }
+}
+@media(max-width:1400px)
+{
+    h1,
+    .h1
+    {
+        font-size: 40px;
+    }
+    .form-white .page-title
+    {
+        margin-bottom: 40px;
+    }
+    .reset-password-form .title-wrap, 
+    .reset-password-form .image-wrap, 
+    .reset-password-form .form-group
+    {
+        margin-bottom: 36px;
+    }
+}
+@media(max-width:1199px)
+{
+    h1,
+    .h1
+    {
+        font-size: 35px;
+    }
+    .form-white .page-title
+    {
+        margin-bottom: 35px;
+    }
+    .app-header .container
+    {
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .login-section
+    {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+}
+@media(max-width:767px)
+{
+    /* Login page css End*/
+    .container
+    {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    h1, .h1
+    {
+        font-size: 28px;
+    }
+    .login-section
+    {
+        background-color: var(--primaryColor);
+        background-image: none!important;
+        margin-top: 0;
+    }
+    .app-header .brand-logo
+    {
+        margin: auto;
+        padding: 32px 0;
+    }
+    .login-section
+    {
+        padding-top: 12px;
+    }
+    .form-white
+    {
+        padding: 20px;
+        background-color: #F2F5FC;
+    }
+    input.form-control
+    {
+        height: 48px;
+        font-size: var(--smallFontSize);
+    }
+    .form-white input.form-control
+    {
+        border: none;
+    }
+    .form-group
+    {
+        margin-bottom: 16px;
+    }
+    .form-white
+    {
+        font-size: 12px;
+    }
+    .btn
+    {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .login-with-btn-wrap > button,
+    .reset-password-form .form-sub-title
+    {
+        font-size: var(--smallFontSize);
+    }
+    .login-with-btn-wrap > button
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .login-with-btn-wrap,
+    .login-with-btn-wrap > button
+    {
+        margin: 0;
+    }
+    .form-group.btn
+    {
+        margin-top: 24px;
+    }
+    .login-with-button >span
+    {
+        margin-bottom: 16px;
+    }
+    .login-with-btn-wrap > button
+    {
+        margin-bottom: 16px;
+    }
+    .login-with-btn-wrap > button:last-child
+    {
+        margin-bottom: 0;
+    }
+    /* Login page css End*/
+    .reset-password-form .title-wrap, .reset-password-form .image-wrap, .reset-password-form .form-group
+    {
+        margin-bottom: 30px;
+    }
+    .reset-password-form .form-group.btn
+    {
+        margin-top: 0;
+    }
+    .reset-password-form .image-wrap
+    {
+        max-width: 250px;
+    }
+    
+
+}
+@media(max-width:374px)
+{
+    .form-white
+    {
+        padding: 15px;   
+    }
+    .container
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .form-white .page-title
+    {
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+}
