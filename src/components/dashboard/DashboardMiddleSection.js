@@ -10,10 +10,10 @@ const DashboardMiddleSection = () => {
         <>
             <div className='dashboard-middle-wrapper'>
                 <Row>
-                    <Col lg={6} className="left-col-wrap overview-col">
+                    <Col xl={6} className="left-col-wrap overview-col">
                         <OverViewCol />
                     </Col>
-                    <Col lg={6} className="right-col-wrap calender-shift-col">
+                    <Col xl={6} className="right-col-wrap calender-shift-col">
                         <DayShiftSchedule />
                     </Col>
                 </Row>

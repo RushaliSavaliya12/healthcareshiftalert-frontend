@@ -4,40 +4,55 @@ import FullCalendar from '@fullcalendar/react'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction';
 
-export default class DayShiftSchedule extends React.Component {
-    render() {
-
-        var DayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat',];
-
-        return (
-            <div className='calender-wrapper schedule-shift-calender' id="shiftScheduleCalender">
+const DayShiftSchedule = () => {
 
 
+    useEffect(() => {
+        onDateClickData();
+    });
 
-                <FullCalendar
-                    plugins={[dayGridPlugin, interactionPlugin]}
-                    initialView="dayGridWeek"
-                    titleFormat={{ month: 'long', year: 'numeric' }}
-                    dayHeaderContent={
-                        function (arg) {
-                            // const dayName = date;
-                            console.log(arg.date.getDate())
-                            return (
-                                <>
-                                    <span className='day-name'>{DayNames[arg.date.getDay()]}</span>
-                                    <span className='date'>{arg.date.getDate()}</span>
-                                </>
-                            )
-                        }
-                    }
-                    dayHeaderFormat={{ day: 'numeric', weekday: 'short', }
-                    }
-                />
-                <RenderScheduleContent />
-            </div>
-
-        )
+    // // On Date click
+    const onDateClickData = () => {
+        const dateAnchor = document.querySelectorAll('.fc-col-header-cell-cushion');
+        console.log(dateAnchor);
+        [].forEach.call(dateAnchor, function (item) {
+            item.onclick = function (e) {
+                item.classList.add('active');
+            }
+        });
     }
+
+    // // On Date click
+
+
+    var DayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat',];
+
+    return (
+        <div className='calender-wrapper schedule-shift-calender' id="shiftScheduleCalender">
+
+            <FullCalendar
+                plugins={[dayGridPlugin, interactionPlugin]}
+                initialView="dayGridWeek"
+                titleFormat={{ month: 'long', year: 'numeric' }}
+                dayHeaderContent={
+                    function (arg) {
+                        // const dayName = date;
+                        console.log(arg.date.getDate())
+                        return (
+                            <>
+                                <span className='day-name'>{DayNames[arg.date.getDay()]}</span>
+                                <span className='date'>{arg.date.getDate()}</span>
+                            </>
+                        )
+                    }
+                }
+                dayHeaderFormat={{ day: 'numeric', weekday: 'short', }
+                }
+            />
+            <RenderScheduleContent />
+        </div>
+
+    )
 }
 
 function RenderScheduleContent() {
@@ -88,7 +103,7 @@ function RenderScheduleContent() {
                 shiftTypeText: "RN/LPN",
                 shiftUserName: "Alisa Jones"
             },
-            
+
         ]
     }
 
@@ -123,3 +138,5 @@ function RenderScheduleContent() {
         </>
     )
 }
+
+export default DayShiftSchedule

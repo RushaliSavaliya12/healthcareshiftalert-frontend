@@ -76,11 +76,11 @@ const LoginForm = () => {
         event.preventDefault();
 
         // recaptcha
-        window.grecaptcha.ready(function () {
-            window.grecaptcha.execute('6LfKBaIgAAAAAHs1rgq97ZvPHFf1Um4Mo8FDOrBM', { action: 'submit' }).then(function (token) {
+        // window.grecaptcha.ready(function () {
+        //     window.grecaptcha.execute('6LfKBaIgAAAAAHs1rgq97ZvPHFf1Um4Mo8FDOrBM', { action: 'submit' }).then(function (token) {
                 
-            });
-        });
+        //     });
+        // });
         // recaptcha
 
 

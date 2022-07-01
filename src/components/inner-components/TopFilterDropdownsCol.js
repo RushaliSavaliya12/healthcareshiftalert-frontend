@@ -18,7 +18,7 @@ const FacilityOptions = [
 const TopFilterDropdownsCol = () => {
     return (
         <>
-            <Col lg={5} className="right-col-wrap top-dropdown-col">
+            <Col xl={5} lg={6} className="right-col-wrap top-dropdown-col">
                 <div className='col-inner'>
                     <CustomDropdown optionData={FacilityOptions} />
                     <Notification />

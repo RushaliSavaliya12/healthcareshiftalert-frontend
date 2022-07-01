@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import {RoutesPath} from '../App';
+import { RoutesPath } from '../App';
 
 const LeftPanel = () => {
     const leftPanelMenuData = [
@@ -67,7 +67,7 @@ const LeftPanel = () => {
     ]
     return (
         <>
-            <Col lg={3} className="left-panel-col left-panel-main">
+            <Col lg={3} className="left-panel-col left-panel-main" id="mobileMenu">
                 <div className='left-panel-wrap'>
                     <Navbar.Brand href={RoutesPath.dashboard}>
                         <figure>
@@ -100,9 +100,16 @@ const LeftPanel = () => {
                         </div>
                         <div className="logout-btn">
                             <button id='logout-btn' className="btn-white">
-                                <img src="assets/images/ico/Logout-icon.svg"/>
+                                <img src="assets/images/ico/Logout-icon.svg" />
                             </button>
                         </div>
+                        <button className='close-panel-btn close-btn' id="MenucloseBtn"></button>
+                    </div>
+                    <div className="logout-btn mobile-logout-btn">
+                        <button id='logout-btn' className="btn-white">
+                            <img src="assets/images/ico/Logout-icon.svg" />
+                            <span className='logout-text'>Log out</span>
+                        </button>
                     </div>
                 </div>
             </Col>

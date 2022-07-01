@@ -10,7 +10,7 @@ const DashboardTopSection = () => {
         <>
             <div className='dashboard-top-wrapper'>
                 <Row>
-                    <Col lg={7} className="left-col-wrap">
+                    <Col xl={7} lg={6} className="left-col-wrap">
                         <TopQuotes />
                     </Col>
 

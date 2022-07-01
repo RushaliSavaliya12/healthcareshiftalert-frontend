@@ -16,7 +16,7 @@ const DashboardTableSection = () => {
     ]
     return (
         <>
-            <div className='dashboard-bottom-wrapper dashboard-table-section'>
+            <div className='dashboard-bottom-wrapper dashboard-table-section ='>
                 <div className="table-top-wrapper">
                     <Row className="table-top-row">
                         <Col className="col-md-8 table-title-col">
@@ -36,7 +36,7 @@ const DashboardTableSection = () => {
                         </Col>
                     </Row>
                 </div>
-                <div className="table-wrapper recent-activity-table">
+                <div className="table-wrapper recent-activity-table table-responsive">
                     <RecentActivitiyTable />
                 </div>
             </div>

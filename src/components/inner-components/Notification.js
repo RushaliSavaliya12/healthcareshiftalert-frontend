@@ -50,10 +50,13 @@ const Notification = () => {
 
     const popupOpen = () =>{
         setShowClass("show");
+        document.body.classList.add('modal-open');
+        
     }
 
     const popupClose = (e) =>{
         setShowClass("");
+        document.body.classList.remove('modal-open');
     }
 
     return (

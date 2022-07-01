@@ -574,7 +574,7 @@ input.form-control {
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
-    max-height: 100vh;
+    height: calc(100vh - 20px);
     position: fixed;
 }
 
@@ -591,8 +591,10 @@ input.form-control {
 .left-panel-main .navbar-collapse {
     display: block;
     margin-top: 42px;
-    max-height: 60vh;
+    margin-bottom: 30px;
+    max-height: calc(100vh - 300px);
     overflow: auto;
+    padding-right: 10px;
 }
 
 .app-main .blue-bg-section {
@@ -657,18 +659,18 @@ input.form-control {
 .left-panel-wrap {
     position: relative;
     height: 100%;
-    padding-bottom: 150px;
 }
+
 
 .left-panel-main .profile-wrapper {
     display: flex;
     align-items: center;
     color: #fff;
     padding-right: 5px;
-    position: fixed;
+    position: absolute;
     left: 0;
     width: 100%;
-    bottom: 32px;
+    bottom: 0;
 }
 
 .left-panel-main .profile-image-wrapper {
@@ -733,7 +735,7 @@ input.form-control {
 
 .notification-popup {
     position: fixed;
-    right: -100%;
+    right: -350%;
     background-color: #fff;
     height: 100%;
     max-height: 100vh;
@@ -744,6 +746,8 @@ input.form-control {
     border-bottom-left-radius: 12px;
     padding: 30px 20px 20px;
     transition: all 800ms ease-in-out;
+    z-index: 9999;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0,0.09);
 }
 
 .notification-popup.show {
@@ -832,6 +836,8 @@ input.form-control {
     padding: 20px;
     max-height: 55vh;
     overflow-y: auto;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
+    z-index: 99;
 }
 
 .search-input-wrap {
@@ -1154,14 +1160,16 @@ input.form-control {
 }
 
 .schedule-shift-calender .fc .fc-day-today .fc-col-header-cell-cushion,
-.schedule-shift-calender .fc .fc-col-header-cell-cushion:hover
+.schedule-shift-calender .fc .fc-col-header-cell-cushion:hover,
+.schedule-shift-calender .fc .fc-col-header-cell-cushion.active
 {
     background-color: #0EA80F;
     transition: all 0.4s ease-in-out;
 }
 
 .schedule-shift-calender .fc-day-today .fc-col-header-cell-cushion span,
-.schedule-shift-calender .fc .fc-col-header-cell-cushion:hover span
+.schedule-shift-calender .fc .fc-col-header-cell-cushion:hover span,
+.schedule-shift-calender .fc .fc-col-header-cell-cushion.active span
 {
     color: #fff;
     transition: all 0.4s ease-in-out;
@@ -1361,11 +1369,27 @@ input.form-control {
 .table-wrapper table td {
     color: #545761;
 }
-
+.table-wrapper table tr:last-child td
+{
+    width: 200px;
+}
+.table-wrapper table tr:nth-child(2) td,
+.table-wrapper table tr:nth-child(3) td
+{
+    max-width: 100px;
+}
 .table-wrapper .activity-text .icon-wrap {
     padding-right: 13px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
+.table-wrapper .activity-text
+{
+    padding-left: 30px;
+    position: relative;
+}
 .table-wrapper .activity-text .text-wrap {
     max-width: 160px;
     display: inline-block;
@@ -1399,9 +1423,20 @@ input.form-control {
 }
 
 .table-wrapper tr td:first-child {
-    width: 600px;
+    width: 700px;
 }
-
+.table-wrapper table tr td
+{
+    width: 200px;
+}
+.table-wrapper table tr td:nth-child(2)
+{
+    width: 100px;
+}
+.table-wrapper table tr td:nth-child(3)
+{
+    width: 100px;
+}
 .calender-filter .rmdp-wrapper {
     border-radius: 20px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
@@ -1473,10 +1508,42 @@ input.form-control {
 ::-webkit-scrollbar {
     background-color:transparent;
     width: 6px;
+    height: 4px;
     border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #989BA5;
     border-radius: 6px;
 }
+.calender-col
+{
+    text-align: right;
+}
+.grecaptcha-badge
+{
+    display: none!important;
+}
+.modal-open
+{
+    overflow: hidden;
+}
+.app-main::before
+{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index:999;
+}
+.modal-open .app-main::before
+{
+    opacity: 1;
+    visibility: visible;
+}
+   
 /* Dashboard css End*/

@@ -1,5 +1,6 @@
 import React from "react";
 import LeftPanel from "../components/LeftPanel";
+import HeaderMobile from "../components/HeaderMobile";
 import DashboardTopSection from "../components/dashboard/DashboardTopSection";
 import DashboardMiddleSection from "../components/dashboard/DashboardMiddleSection";
 import DashboardTableSection from "../components/dashboard/DashboardTableSection";
@@ -9,6 +10,7 @@ const Dashboard = () => {
     return (
         <>
             <main className='app-main'>
+                <HeaderMobile />
                 <section className="main-section dashboard-section blue-bg-section">
                     <div className="section-wrap">
                         <Row className="dashboard-row-main">

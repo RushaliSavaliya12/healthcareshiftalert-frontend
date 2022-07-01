@@ -2,14 +2,20 @@
 {
     .left-panel-col
     {
-        flex: 0 0 256px;
-        max-width: 256px;
+        flex: 0 0 276px;
+        max-width: 276px;
+        width: 276px;
     }
     .right-content-col
     {
-        flex: 0 0 calc(100% - 256px);
-        max-width: calc(100% - 256px);
-        margin-left: 256px;
+        flex: 0 0 calc(100% - 276px);
+        max-width: calc(100% - 276px);
+        margin-left: 276px;
+    }
+    .mobile-header
+    {
+        display: none;
+        
     }
 }
 @media(max-width:1400px)
@@ -29,7 +35,19 @@
     {
         margin-bottom: 36px;
     }
+    .left-panel-col
+    {
+        padding-top: 20px;
+    }
 }
+@media (max-width:1365px) {
+    .overview-wrap
+    {
+        padding-right: 60px;
+    }
+    
+}
+
 @media(max-width:1199px)
 {
     h1,
@@ -52,10 +70,241 @@
         padding-top: 50px;
         padding-bottom: 80px;
     }
+    .dashboard-top-wrapper .top-dropdown-col .col-inner
+    {
+        flex-wrap: wrap;
+    }
+    .dashboard-middle-wrapper .calender-shift-col
+    {
+        margin-top: 30px;
+    }
+    .dashboard-row-main .right-content-col
+    {
+        padding: 30px;
+    }
+
+}
+@media(max-width:1365px) and (min-width:992px)
+{
+    .dashboard-top-wrapper .top-dropdown-col .col-inner
+    {
+        flex-wrap: wrap;
+    }
+    .top-dropdown-col .col-inner>div:first-child
+    {
+        order: 3;
+    }
+    .top-dropdown-col
+    {
+        padding-left: 30px;
+    }
+    .top-dropdown-col .col-inner>div:first-child
+    {
+        margin-top: 20px;
+    }
+    .custom-dropdown
+    {
+        width: 100%;
+    }
+    .top-dropdown-col .dropdown-wrapper
+    {
+        width: 100%;
+    }
+}
+@media(max-width:991px)
+{
+    .left-panel-col
+    {
+        left: -300px;
+        background-color: var(--primaryColor);
+        z-index: 999;
+        height: 100vh;
+        top: 0;
+        width: 300px;
+        transition: all 300ms ease-in-out;
+    }
+    .left-panel-col.show
+    {
+        left: 0;
+        transition: all 300ms ease-in-out;
+    }
+    .custom-dropdown
+    {
+        width: 300px;
+    }
+    .top-dropdown-col .dropdown-wrapper
+    {
+        width: auto;
+    }
+    .top-dropdown-col .col-inner>div:first-child
+    {
+        margin-top: 0;
+    }
+    .top-dropdown-col
+    {
+        margin-top: 30px;
+    }
+    .dashboard-middle-wrapper
+    {
+        margin-top: 30px;
+    }
+    .app-main .blue-bg-section
+    {
+        padding-left:35px;
+    }
+    .mobile-header .top-dropdown-col
+    {
+        display: flex;
+    }
+    .mobile-header .top-dropdown-col > div,
+    .mobile-header .top-dropdown-col > button
+    {
+        margin-left: 5px;
+    }
+    .mobile-header .navbar-toggler
+    {
+        background-color: #fff;
+        border: none;
+        color: var(--textColor);
+        box-shadow: none!important;
+    }
+    .navbar-light .navbar-toggler-icon
+    {
+        background-image: url(../images/ico/toggle-icon.svg);
+        background-size: 20px;
+    }
+    .mobile-header .top-dropdown-col
+    {
+        margin-top: 0;
+    }
+    .mobile-header .navbar
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .app-main .dashboard-section
+    {
+        background-color: #fff;
+    }
+    .dashboard-top-wrapper .notification-wrap ,
+    .dashboard-top-wrapper .message-wrap
+    {
+        display: none;
+    }
+    .table-title-col .custom-dropdown .dropdown-menu
+    {
+        width: 250px;
+    }
+    .table-wrapper table td
+    {
+        padding: 20px 10px;
+    }
+    .table-wrapper table th
+    {
+        padding: 15px 10px;
+    }
+    .table-wrapper table td:first-child,
+    .table-wrapper table th
+    {
+        padding-left: 20px;
+    }
+    .site-header .container
+    {
+        max-width: 100%;
+    }
+    .main-section .section-wrap
+    {
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+    .left-panel-main
+    {
+        padding-top: 100px;
+    }
+    .left-panel-col .navbar-brand
+    {
+        display: none;
+    }
+    .left-panel-main .profile-wrapper
+    {
+        top: 0;
+        bottom: auto;
+        top: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left-panel-main .navbar-collapse
+    {
+        margin-top: 0;
+    }
+    .left-panel-col
+    {
+        padding-top: 124px;
+    }
+    .left-panel-main .profile-wrapper .logout-btn
+    {
+        display: none;
+    }
+    .close-panel-btn.close-btn:before, .close-panel-btn.close-btn:after
+    {
+        background-color: #fff;
+    }
+    .left-panel-main .profile-image-wrapper
+    {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .left-panel-wrap
+    {
+        position: initial;
+    }
+    .close-panel-btn.close-btn
+    {
+        right: 20px;
+    }
+    .left-panel-main .logout-btn.mobile-logout-btn
+    {
+        position: absolute;
+        bottom: 36px;
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        left: 0;
+        padding: 0 20px
+    }
+    .mobile-logout-btn .logout-text
+    {
+        position: absolute;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        left: 75px;
+    }
+    .left-panel-main .navbar-collapse
+    {
+        max-height: calc(100vh - 230px);
+    }
+    .mobile-header
+    {
+        top: -100px;
+        transition: all 400ms ease-in-out;
+    }
+    .mobile-header.sticky
+    {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 990;
+        transition: all 400ms ease-in-out;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 9%);
+    }
 }
 @media(max-width:767px)
 {
     /* Login page css End*/
+    
     .container
     {
         padding-left: 24px;
@@ -64,6 +313,10 @@
     h1, .h1
     {
         font-size: 28px;
+    }
+    .h5, h5
+    {
+        font-size: 18px;
     }
     .login-section
     {
@@ -151,8 +404,125 @@
     {
         max-width: 250px;
     }
-    
+    .custom-dropdown .dropdown-toggle,
+    .custom-dropdown .dropdown-menu
+    {
+        font-size: var(--smallFontSize);
+    }
+    .custom-dropdown
+    {
+        width: 220px;
+    }
+    .overview-wrap
+    {
+        padding-right: 0;
+    }
+    .table-title-col .col-inner
+    {
+        justify-content:space-between;
+    }
+    .table-top-row > div
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .calender-col
+    {
+        text-align: right;
+    }
+    .calender-col
+    {
+        margin-top: 10px;
+    }
 
+}
+@media(max-width:575px)
+{
+    .mobile-header .navbar-toggler
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .top-dropdown-col .btn-square
+    {
+        height: 40px;
+        width: 40px;
+        line-height: 36px;
+    }
+    .app-main .blue-bg-section.main-section
+    {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    .quotes-wrap
+    {
+        font-size: 12px;
+    }
+    .overview-wrap .overview-shift-single
+    {
+        margin-bottom: 10px;
+    }
+    .fc .fc-scrollgrid-section table
+    {
+        width: 100%!important;
+    }
+    .schedule-shift-calender .fc-col-header-cell-cushion .day-name
+    {
+        font-size: 12px;
+    }
+    .schedule-shift-calender .fc .fc-col-header-cell-cushion
+    {
+        width: 35px;
+        padding: 9px 6px 8px;
+    }
+    .schedule-single .time-wrapper,
+    .schedule-single .schedule-shift-content
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .schedule-shift-calender .fc-col-header-cell-cushion .date,
+    .schedule-single .time-wrapper
+    {
+        font-size: 14px;
+    }
+    .schedule-single .time-wrapper
+    {
+        margin-bottom: 10px;
+    }
+    .schedule-listing-wrapper
+    {
+        padding-right: 20px;
+    }
+    .schedule-shift-calender .fc .fc-view-harness
+    {
+        height: 67px!important;
+        margin-bottom: 20px;
+    }
+    .schedule-single
+    {
+        margin-bottom: 10px;
+    }
+    .table-wrapper table tr td
+    {
+        font-size: 14px;
+    }
+    .notification-popup
+    {
+        width: 300px;
+    }
+    .dashboard-row-main .right-content-col
+    {
+        padding: 20px;
+    }
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-thumb
+    {
+        display: none;
+    }
 }
 @media(max-width:374px)
 {

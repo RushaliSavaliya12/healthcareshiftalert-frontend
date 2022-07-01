@@ -45,7 +45,7 @@ const OverViewCol = () => {
             <h2 className='section-title h5'>Overview</h2>
             <div className='overview-shift-list row'>
                 {OverViewColShiftData.map((val, index) =>
-                    <Col md={6} className='overview-shift-single' key={index}>
+                    <Col sm={6} className='overview-shift-single' key={index}>
                         <div className='shift-col-inner'>
                             <div className="icon-wrap">
                                 <img src={val.overviewShiftIcon} alt=""/>
