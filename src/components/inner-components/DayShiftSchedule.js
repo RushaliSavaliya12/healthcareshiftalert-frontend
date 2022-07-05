@@ -14,10 +14,13 @@ const DayShiftSchedule = () => {
     // // On Date click
     const onDateClickData = () => {
         const dateAnchor = document.querySelectorAll('.fc-col-header-cell-cushion');
-        console.log(dateAnchor);
+     
         [].forEach.call(dateAnchor, function (item) {
             item.onclick = function (e) {
                 item.classList.add('active');
+                // item.classList.remove('active');
+                dateAnchor.classList.remove('active');
+                
             }
         });
     }

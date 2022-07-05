@@ -62,7 +62,11 @@ const Notification = () => {
     return (
         <div className={`notification-wrap ${showClass}`}>
             <Button className="notification-btn btn-white btn-square" onClick={popupOpen}>
-                <img src="assets/images/ico/notification-icon-black.svg" alt="notification icon" />
+               <i className='icon-notification-solid'>
+                    <span className='path1'></span>
+                    <span className='path2'></span>
+                    <span className='path3'></span>
+               </i>
             </Button>
             <div className={`notification-main all-notification notification-popup ${showClass}`}>
                 <div className="all-notification-inner">
@@ -81,7 +85,7 @@ const Notification = () => {
                                     </div>
                                 </div>
                                 <Button className="delete-btn btn-white">
-                                    <img src="assets/images/ico/trash-icon-grey.svg" alt="notification icon" />
+                                    <i className='icon-trash'></i>
                                 </Button>
                             </div>
                         )}

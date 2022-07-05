@@ -29,7 +29,7 @@ const CustomDropdown = (props) => {
 
 
     return (
-        <div className="dropdown-wrapper">
+        <div className={`dropdown-wrapper ${props.dropClass}`}>
             <Dropdown id="facilityDropdown" className="custom-dropdown">
                 <Dropdown.Toggle id="facilityDropdown">
                     {selection}

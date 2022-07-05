@@ -11,7 +11,7 @@ const MessagesButton = () => {
     return (
         <div className='message-wrap'>
             <Button className="message-btn btn-white btn-square">
-                <img src="assets/images/ico/message-icon-black.svg" alt="notification icon" />
+                <i className='icon-message-solid'></i>
             </Button>
 
         </div>
