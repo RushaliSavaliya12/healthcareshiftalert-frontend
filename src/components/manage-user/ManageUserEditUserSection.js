@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import ManageUserTab from '../inner-components/ManageUserTab';
-import EditUser from '../inner-components/EditUser';
 
 
 
 
-const ManageUserEditUserSection = () => {
+const ManageUserEditUserSection = (props) => {
 
     return (
         <>
@@ -13,7 +11,7 @@ const ManageUserEditUserSection = () => {
                 <div className='user-tab-wrapper'>
                     <div className="user-tab-col">
                         <div className="col-inner">
-                            <EditUser />
+                            {props.userTypeData}
                         </div>
                     </div>
 

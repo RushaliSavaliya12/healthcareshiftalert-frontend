@@ -3,7 +3,7 @@ import { Dropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { RoutesPath } from '../../App';
 
-const UserTableMenuDropdown = () => {
+const CliniciansTableMenuDropdown = () => {
     return (
         <>
             <Dropdown className="user-table-menu-dropdown custom-dropdown">
@@ -12,7 +12,7 @@ const UserTableMenuDropdown = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <LinkContainer to={RoutesPath.manageUserEdit}>
+                    <LinkContainer to={RoutesPath.managecliniciansEdit}>
                         <Dropdown.Item className="view-btn">
                             <i className='icon-eye'></i> View
                         </Dropdown.Item>
@@ -34,4 +34,4 @@ const UserTableMenuDropdown = () => {
     )
 }
 
-export default UserTableMenuDropdown;
+export default CliniciansTableMenuDropdown;

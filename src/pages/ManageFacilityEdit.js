@@ -3,9 +3,10 @@ import LeftPanel from "../components/LeftPanel";
 import HeaderMobile from "../components/HeaderMobile";
 import ManageTopHeaderSection from "../components/manage-user/ManageTopHeaderSection";
 import ManageUserEditUserSection from "../components/manage-user/ManageUserEditUserSection";
+import EditFacility from "../components/inner-components/EditFacility";
 import { Row, Col } from 'react-bootstrap';
 
-const ManageUserEdit = () => {
+const ManageFacilityEdit = () => {
     return (
         <>
             <main className='app-main'>
@@ -15,8 +16,8 @@ const ManageUserEdit = () => {
                         <Row className="dashboard-row-main">
                             <LeftPanel />
                             <Col lg="9" className="right-content-col grey-bg-col">
-                                <ManageTopHeaderSection />
-                                <ManageUserEditUserSection />
+                                <ManageTopHeaderSection pageTitle="Manage Facilities"/>
+                                <ManageUserEditUserSection userTypeData={<EditFacility />}/>
                             </Col>
                         </Row>
                         
@@ -27,4 +28,4 @@ const ManageUserEdit = () => {
     )
 }
 
-export default ManageUserEdit;
+export default ManageFacilityEdit;

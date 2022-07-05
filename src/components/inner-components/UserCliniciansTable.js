@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SwitchToggle from './SwitchToggle';
-import UserTableMenuDropdown from './UserTableMenuDropdown';
-
+import CliniciansTableMenuDropdown from './CliniciansTableMenuDropdown';
 
 
 const UserCliniciansTable = () => {
@@ -120,7 +119,7 @@ const UserCliniciansTable = () => {
                                 <SwitchToggle dataSwitch={val.applyShiftchecked} switchToggleID="shiftApproveSwitch"/>
                             </td>
                             <td>
-                                <UserTableMenuDropdown />
+                                <CliniciansTableMenuDropdown />
                             </td>
                         </tr>
 

@@ -6,10 +6,10 @@ import { Calendar } from "react-multi-date-picker"
 
 const DateofBirthInput = (props) => {
 
-    const [value, setValue] = useState(new Date())
+    // const [value, setValue] = useState(new Date())
 
     return(
-        <DatePicker format="MMM DD, YYYY" value={value}/>
+        <DatePicker format="MM/DD/YYYY" placeholder="mm/dd/yyyy" className='form-control'/>
     )
 }
 

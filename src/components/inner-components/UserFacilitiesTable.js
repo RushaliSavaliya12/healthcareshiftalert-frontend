@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import UserTableMenuDropdown from './UserTableMenuDropdown';
+import FacilityTableMenuDropdown from './FacilityTableMenuDropdown';
 import SwitchToggle from './SwitchToggle';
 
 const UserFacilitiesTable = () => {
@@ -125,7 +125,7 @@ const UserFacilitiesTable = () => {
 
                                 </td>
                                 <td>
-                                    <UserTableMenuDropdown />
+                                    <FacilityTableMenuDropdown />
                                 </td>
                             </tr>
 

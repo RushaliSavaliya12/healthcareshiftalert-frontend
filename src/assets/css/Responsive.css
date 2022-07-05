@@ -708,10 +708,16 @@
         font-size: 12px;
     }
     .edit-user-form input.form-control,
-    .add-user-popup input.form-control
+    .add-user-popup input.form-control,
+    .add-user-popup input.rmdp-input
     {
         height: 42px;
         padding: 10px 15px;
+        font-size: 14px;
+    }
+    .add-user-popup .custom-dropdown .dropdown-toggle.btn
+    {
+        height: 42px;
         font-size: 14px;
     }
     .edit-user .edit-user-top, .edit-user .edit-user-bottom
@@ -728,6 +734,10 @@
     .add-user-popup .submit-btn .btn
     {
         width: 100%;
+    }
+    .add-user-popup .modal-body
+    {
+        padding: 20px;
     }
 }
 @media(max-width:374px)

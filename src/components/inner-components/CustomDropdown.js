@@ -74,7 +74,7 @@ const CustomDropdown = (props) => {
                 {displayOptions.map((item, index) => {
                     return (
 
-                        <Dropdown.Item onClick={(e) => handleClose(e)} key={index}>
+                        <Dropdown.Item onClick={(e) => handleClose(e)} key={index} isDisable={item.isdisable}>
                             {renderOption(item.label)}
                         </Dropdown.Item>
 

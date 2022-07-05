@@ -2,21 +2,22 @@ import React from "react";
 import LeftPanel from "../components/LeftPanel";
 import HeaderMobile from "../components/HeaderMobile";
 import ManageTopHeaderSection from "../components/manage-user/ManageTopHeaderSection";
-import ManageUserTopFilterSection from "../components/manage-user/ManageUserTopFilterSection";
+import ManageUserEditUserSection from "../components/manage-user/ManageUserEditUserSection";
+import EditClinicians from "../components/inner-components/EditClinicians";
 import { Row, Col } from 'react-bootstrap';
 
-const ManageUser = () => {
+const ManageCliniciansEdit = () => {
     return (
         <>
             <main className='app-main'>
                 <HeaderMobile />
-                <section className="main-section dashboard-section blue-bg-section manage-user-section">
+                <section className="main-section dashboard-section blue-bg-section user-edit-section">
                     <div className="section-wrap">
                         <Row className="dashboard-row-main">
                             <LeftPanel />
                             <Col lg="9" className="right-content-col grey-bg-col">
-                                <ManageTopHeaderSection pageTitle="Manage Facilities"/>
-                                <ManageUserTopFilterSection />
+                                <ManageTopHeaderSection pageTitle="Manage Clinicians"/>
+                                <ManageUserEditUserSection userTypeData={<EditClinicians />}/>
                             </Col>
                         </Row>
                         
@@ -27,4 +28,4 @@ const ManageUser = () => {
     )
 }
 
-export default ManageUser;
+export default ManageCliniciansEdit;

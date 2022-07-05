@@ -8,7 +8,8 @@ import Login from './pages/Login';
 import ResetPassword from './pages/ResetPassword';
 import Dashboard from './pages/Dashboard';
 import ManageUser from './pages/ManageUser';
-import ManageUserEdit from './pages/ManageUserEdit';
+import ManageFacilityEdit from './pages/ManageFacilityEdit';
+import ManageCliniciansEdit from './pages/ManageCliniciansEdit';
 
 
 export const RoutesPath = {
@@ -16,7 +17,8 @@ export const RoutesPath = {
   resetPassword: '/reset-password',
   dashboard: '/dashboard',
   manageUser: '/manage-users',
-  manageUserEdit: '/edit-user',
+  managefacilityEdit: '/edit-facility',
+  managecliniciansEdit: '/edit-clinicians',
 }
 
 function App() {
@@ -27,7 +29,8 @@ function App() {
       <Route path={RoutesPath.dashboard} element={<Dashboard />} />
       <Route path={RoutesPath.resetPassword} element={<ResetPassword />} />
       <Route path={RoutesPath.manageUser} element={<ManageUser />} />
-      <Route path={RoutesPath.manageUserEdit} element={<ManageUserEdit />} />
+      <Route path={RoutesPath.managefacilityEdit} element={<ManageFacilityEdit />} />
+      <Route path={RoutesPath.managecliniciansEdit} element={<ManageCliniciansEdit />} />
     </Routes>
   );
 }

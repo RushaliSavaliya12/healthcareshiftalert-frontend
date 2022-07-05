@@ -10,11 +10,12 @@ import { RoutesPath } from '../../App';
 
 const AddCliniciansPopup = (props) => {
 
-    // const UserFacilityFilter = [
-    //     { value: 'select Facility', label: 'select Facility' },
-    //     { value: 'active', label: 'Active' },
-    //     { value: 'deactive', label: 'Deactive' }
-    // ]
+    const JobSitesData = [
+        { value: 'Select Facility', label: 'Select Facility', isdisable: "disable" },
+        { value: 'bristol-village', label: 'Bristol Village' },
+        { value: 'chillicothe-campus', label: 'Chillicothe Campus' },
+        { value: 'Toledo', label: 'Toledo' },
+    ]
 
     const [show, setShow] = useState(false);
 
@@ -53,7 +54,7 @@ const AddCliniciansPopup = (props) => {
                                         <InputGroupForm inputId="LastName" inputLabel="Lastname" inputType="text" inputPlaceholder="Text here" inputName="LastName" />
                                     </Col>
                                     <Col md={6}>
-                                        <div className="form-group">
+                                        <div className="form-group date-of-birth-input">
                                             <label className='form-label'>Date of birth</label>
                                             <DateofBirthInput />
                                         </div>
@@ -70,7 +71,10 @@ const AddCliniciansPopup = (props) => {
                                         <InputGroupForm inputId="CliniciansRole" inputLabel="Role" inputType="text" inputPlaceholder="Text here" inputName="CliniciansRole" />
                                     </Col>
                                     <Col md={12}>
-                                        {/* <CustomDropdown /> */}
+                                        <div className='form-group'>
+                                            <label className='form-label'>Job Sites</label>
+                                            <CustomDropdown optionData={JobSitesData} />
+                                        </div>
                                     </Col>
                                 </Row>
                                 <div className='submit-btn'>
