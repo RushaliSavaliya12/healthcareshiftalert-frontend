@@ -7,61 +7,61 @@ const LeftPanel = () => {
     const leftPanelMenuData = [
         {
             LinkUrl: RoutesPath.dashboard,
-            imageWhite: "assets/images/ico/Dashboard-icon-white.svg",
-            imageBlue: "assets/images/ico/dashboard-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/dashboard.svg",
+            imageBlue: "assets/images/ico/panel-icon/dashboard-filled.svg",
             menuText: "Dashboard"
         },
         {
             LinkUrl: "/scheduling",
-            imageWhite: "assets/images/ico/Calendar-icon-white.svg",
-            imageBlue: "assets/images/ico/Calendar-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/calendar.svg",
+            imageBlue: "assets/images/ico/panel-icon/calendar-filled.svg",
             menuText: "Scheduling"
         },
         {
             LinkUrl: "/timesheets",
-            imageWhite: "assets/images/ico/Timesheets-icon-white.svg",
-            imageBlue: "assets/images/ico/Timesheets-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/timesheets.svg",
+            imageBlue: "assets/images/ico/panel-icon/timesheets-filled.svg",
             menuText: "Timesheets"
         },
         {
             LinkUrl: "/feedback-ratings",
-            imageWhite: "assets/images/ico/Star-icon-white.svg",
-            imageBlue: "assets/images/ico/Star-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/star.svg",
+            imageBlue: "assets/images/ico/panel-icon/star-filled.svg",
             menuText: "FeedBack & Ratings"
         },
         {
             LinkUrl: "/manage-users",
-            imageWhite: "assets/images/ico/Profile-user-icon-white.svg",
-            imageBlue: "assets/images/ico/Profile-user-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/user.svg",
+            imageBlue: "assets/images/ico/panel-icon/user-filled.svg",
             menuText: "Manage users"
         }, {
             LinkUrl: "/statistics",
-            imageWhite: "assets/images/ico/Statistic-icon-white.svg",
-            imageBlue: "assets/images/ico/Statistics-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/graph.svg",
+            imageBlue: "assets/images/ico/panel-icon/graph-filled.svg",
             menuText: "Statistics"
         },
         {
             LinkUrl: "/documents",
-            imageWhite: "assets/images/ico/Document-icon-white.svg",
-            imageBlue: "assets/images/ico/Documents-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/document.svg",
+            imageBlue: "assets/images/ico/panel-icon/document-filled.svg",
             menuText: "Documents"
         },
         {
             LinkUrl: "/add-paycard",
-            imageWhite: "assets/images/ico/Card-icon-white.svg",
-            imageBlue: "assets/images/ico/Card-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/paycard.svg",
+            imageBlue: "assets/images/ico/panel-icon/paycard-filled.svg",
             menuText: "Add Paycard"
         },
         {
             LinkUrl: "/notes",
-            imageWhite: "assets/images/ico/Note-icon-white.svg",
-            imageBlue: "assets/images/ico/Note-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/notes.svg",
+            imageBlue: "assets/images/ico/panel-icon/notes-filled.svg",
             menuText: "Notes"
         },
         {
             LinkUrl: "/workforce-calculator",
-            imageWhite: "assets/images/ico/Caculator-icon-white.svg",
-            imageBlue: "assets/images/ico/Caculator-icon-blue.svg",
+            imageWhite: "assets/images/ico/panel-icon/calculator.svg",
+            imageBlue: "assets/images/ico/panel-icon/calculator.svg",
             menuText: "Workforce Calculator"
         }
     ]
@@ -100,14 +100,14 @@ const LeftPanel = () => {
                         </div>
                         <div className="logout-btn">
                             <button id='logout-btn' className="btn-white">
-                                <img src="assets/images/ico/Logout-icon.svg" />
+                                <i className="icon-logout"></i>
                             </button>
                         </div>
                         <button className='close-panel-btn close-btn' id="MenucloseBtn"></button>
                     </div>
                     <div className="logout-btn mobile-logout-btn">
                         <button id='logout-btn' className="btn-white">
-                            <img src="assets/images/ico/Logout-icon.svg" />
+                            <i className="icon-logout"></i>
                             <span className='logout-text'>Log out</span>
                         </button>
                     </div>

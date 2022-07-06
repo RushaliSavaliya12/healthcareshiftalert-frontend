@@ -12,10 +12,11 @@
         max-width: calc(100% - 276px);
         margin-left: 276px;
     }
-    .mobile-header
+    .mobile-header,
+    .close-panel-btn,
+    .mobile-logout-btn  
     {
         display: none;
-        
     }
 }
 @media(max-width:1400px)

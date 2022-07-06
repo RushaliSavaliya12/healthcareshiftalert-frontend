@@ -4,7 +4,7 @@ import { RoutesPath } from '../../App';
 
 
 
-const CustomDropdown = (props) => {
+const DropdownWithCheckbox = (props) => {
 
     const [anchorEl, setAnchorEl] = useState(null);
     const [searchText, setSearchText] = useState("");
@@ -30,7 +30,7 @@ const CustomDropdown = (props) => {
 
     return (
         <div className={`dropdown-wrapper ${props.dropClass}`}>
-            <Dropdown id="facilityDropdown" className="custom-dropdown">
+            <Dropdown id="facilityDropdown" className="custom-dropdown dropdown-with-checkbox">
                 <Dropdown.Toggle id="facilityDropdown">
                     {selection}
                 </Dropdown.Toggle>
@@ -75,6 +75,8 @@ const CustomDropdown = (props) => {
                     return (
 
                         <Dropdown.Item onClick={(e) => handleClose(e)} key={index}>
+                            
+                            <input type="checkbox"></input>
                             {renderOption(item.label)}
                         </Dropdown.Item>
 
@@ -87,4 +89,4 @@ const CustomDropdown = (props) => {
 }
 
 
-export default CustomDropdown;
+export default DropdownWithCheckbox;

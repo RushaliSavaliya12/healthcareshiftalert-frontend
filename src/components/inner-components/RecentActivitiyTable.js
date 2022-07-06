@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const RecentActivitiyTable = () => {
     const recentTableData = [
         {
-            activityIconSrc: "assets/images/ico/payment-icon-grey.svg",
+            activityIconClassName: "icon-payment-solid",
             activityName: "Payment Recieved",
             activityAmount: "$2,000",
             activityStatus: "Success",
@@ -12,7 +12,7 @@ const RecentActivitiyTable = () => {
             activityDate: "May 5, 2022"
         },
         {
-            activityIconSrc: "assets/images/ico/request-approve-icon-grey.svg",
+            activityIconClassName: "icon-shift-request-solid",
             activityName: "Shift request approved",
             activityAmount: "",
             activityStatus: "Success",
@@ -20,7 +20,7 @@ const RecentActivitiyTable = () => {
             activityDate: "May 5, 2022"
         },
         {
-            activityIconSrc: "assets/images/ico/cancellation-icon-grey.svg",
+            activityIconClassName: "icon-close-solid",
             activityName: "No show without notification",
             activityAmount: "",
             activityStatus: "Failed",
@@ -28,7 +28,7 @@ const RecentActivitiyTable = () => {
             activityDate: "May 5, 2022"
         },
         {
-            activityIconSrc: "assets/images/ico/cancellation-icon-grey.svg",
+            activityIconClassName: "icon-close-solid",
             activityName: "Shift cancellation approved",
             activityAmount: "",
             activityStatus: "Processing",
@@ -36,7 +36,7 @@ const RecentActivitiyTable = () => {
             activityDate: "May 5, 2022"
         },
         {
-            activityIconSrc: "assets/images/ico/payment-icon-grey.svg",
+            activityIconClassName: "icon-payment-solid",
             activityName: "Payment Recieved",
             activityAmount: "$2,000",
             activityStatus: "Success",
@@ -44,7 +44,8 @@ const RecentActivitiyTable = () => {
             activityDate: "May 5, 2022"
         },
         {
-            activityIconSrc: "assets/images/ico/payment-icon-grey.svg",
+            activityIconClassName: "icon-payment-solid",
+            activityIconClassName: "icon-payment-solid",
             activityName: "Payment Recieved",
             activityAmount: "$2,000",
             activityStatus: "Success",
@@ -69,7 +70,9 @@ const RecentActivitiyTable = () => {
                         <tr key={index}>
                             <td>
                                 <div className="activity-text">
-                                    <span className='icon-wrap'><img src={val.activityIconSrc} alt="" /></span>
+                                    <span className='icon-wrap'>
+                                        <i className={val.activityIconClassName}></i>
+                                    </span>
                                     <span className='text-wrap'>{val.activityName}</span>
                                 </div>
                             </td>

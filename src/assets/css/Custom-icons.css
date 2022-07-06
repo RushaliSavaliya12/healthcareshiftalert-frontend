@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'cutomIcon';
+    src:  url('../fonts/customIcon.eot');
+    src:  url('../fonts/customIcon.eot') format('embedded-opentype'),
+      url('../fonts/customIcon.ttf') format('truetype'),
+      url('../fonts/customIcon.woff') format('woff'),
+      url('../fonts/customIcon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'cutomIcon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-Back-arrow:before {
+    content: "\e925";
+  }
+  .icon-toggle-menu:before {
+    content: "\e923";
+    
+  }
+  .icon-dashboard:before {
+    content: "\e914";
+   
+  }
+  .icon-calculator:before {
+    content: "\e900";
+    
+  }
+  .icon-calender:before {
+    content: "\e901";
+    
+  }
+  .icon-calender-solid:before {
+    content: "\e902";
+    
+  }
+  .icon-check:before {
+    content: "\e903";
+    
+  }
+  .icon-chevron-left:before {
+    content: "\e904";
+  }
+  .icon-chevron-right:before {
+    content: "\e90f";
+  }
+  .icon-close:before {
+    content: "\e910";
+  }
+  .icon-close-solid:before {
+    content: "\e911";
+    
+  }
+  .icon-cloud:before {
+    content: "\e912";
+  }
+  .icon-dashboard-filled:before {
+    content: "\e913";
+   
+  }
+  .icon-disable:before {
+    content: "\e915";
+    
+  }
+  .icon-document:before {
+    content: "\e924";
+    
+  }
+  .icon-document-solid:before {
+    content: "\e916";
+    
+  }
+  .icon-edit:before {
+    content: "\e917";
+  }
+  .icon-eye:before {
+    content: "\e905";
+   
+  }
+  .icon-gallary:before {
+    content: "\e906";
+    color: #989ba5;
+  }
+  .icon-graph:before {
+    content: "\e907";
+    
+  }
+  .icon-graph-solid:before {
+    content: "\e908";
+    
+  }
+  .icon-logout:before {
+    content: "\e909";
+  }
+  .icon-message-solid:before {
+    content: "\e918";
+  }
+  .icon-notes:before {
+    content: "\e919";
+    
+  }
+  .icon-notification-solid .path1:before {
+    content: "\e91a";
+    
+  }
+  .icon-notification-solid .path2:before {
+    content: "\e91b";
+    margin-left: -0.900390625em;
+   
+  }
+  .icon-notification-solid .path3:before {
+    content: "\e91c";
+    margin-left: -0.900390625em;
+    
+  }
+  .icon-paycard:before {
+    content: "\e91d";
+    
+  }
+  .icon-payment-solid:before {
+    content: "\e91e";
+    
+  }
+  .icon-plus:before {
+    content: "\e91f";
+    
+  }
+  .icon-quotes:before {
+    content: "\e920";
+  }
+  .icon-search:before {
+    content: "\e921";
+    
+  }
+  .icon-shift-request-solid:before {
+    content: "\e922";
+    
+  }
+  .icon-star:before {
+    content: "\e90a";
+    color: #fff;
+  }
+  .icon-timesheets:before {
+    content: "\e90b";
+    
+  }
+  .icon-timesheets-solid:before {
+    content: "\e90c";
+    
+  }
+  .icon-trash:before {
+    content: "\e90d";
+    
+  }
+  .icon-user:before {
+    content: "\e90e";
+   
+  }
+  
