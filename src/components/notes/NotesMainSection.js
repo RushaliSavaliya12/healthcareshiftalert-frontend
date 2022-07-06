@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Tab, Nav, Accordion, Card, CustomToggle, } from 'react-bootstrap';
+import TextEditorBox from '../inner-components/TextEditorBox';
 import SearchInput from '../inner-components/SearchInput';
 
 const NotesMainSection = (props) => {
@@ -176,13 +177,10 @@ const NotesMainSection = (props) => {
                                                                         <p>{val.FullNoteDatap3}</p>
                                                                     </div>
                                                                 </div>
-                                                                <div className='edit-note d-none'>
+                                                                <div className='edit-note'>
                                                                     <form>
                                                                         <div className='form-inner'>
-                                                                            <div className='form-group'>
-                                                                                <label className='form-label'>Title</label>
-                                                                                <textarea>{val.notesTitle}</textarea>
-                                                                            </div>
+                                                                            <TextEditorBox />
                                                                         </div>
                                                                     </form>
                                                                 </div>
