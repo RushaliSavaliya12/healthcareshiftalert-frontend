@@ -16,7 +16,7 @@ const AddFacilityPopup = (props) => {
     return (
 
         <div className="add-user-pop-wrap">
-            <Button className="border-btn" onClick={handleShow}><i className='icon-plus'></i> Add Clinicians</Button>
+            <Button className="border-btn" onClick={handleShow}><i className='icon-plus'></i>{props.ModelTitle}</Button>
             <Modal show={show} onHide={handleClose} className='add-user-popup'>
                 <Modal.Header closeButton>
                     <h5>{props.ModelTitle}</h5>

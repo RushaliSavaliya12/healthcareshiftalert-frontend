@@ -9,7 +9,7 @@ const CredentialTable = () => {
             pdfFileName: "Background check",
             LastDate: "26/04/2022",
             statusProgressToggle: <ApproveDeclinedSwitch />,
-            statusTagClassName: "",
+            statusTagClassName: "no-status",
             status: "",
         },
         {

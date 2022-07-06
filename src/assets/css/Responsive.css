@@ -1,3 +1,37 @@
+@media(min-width:768px)
+{
+    .notes-tab-btn-col 
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .notes-tab-btn-col .col-inner
+    {
+        position: relative;
+        padding-top: 104px;
+    }
+    .notes-tab-btn-col
+    {
+        border-right: 2px solid #F2F5FC;
+    }
+    .notes-top-header
+    {
+        padding: 24px 24px 36px;
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        width: 100%;
+        left: 0;
+    }
+    .notes-tab .accordion-header
+    {
+        display: none;
+    }
+    .notes-tab .tab-content .accordion-collapse
+    {
+        display: block;
+    }
+}
 @media(min-width:992px)
 {
     .left-panel-col
@@ -103,7 +137,19 @@
     {
         width: 250px;
     }
-
+    .tab-content .date-text
+    {
+        left: 40px;
+        transform: none;
+    }
+    .notes-top-header
+    {
+        padding: 24px 15px;
+    }
+    .notes-top-header .top-header-inner
+    {
+        padding-right: 30px;
+    }
 }
 @media(max-width:1365px) and (min-width:992px)
 {
@@ -539,8 +585,62 @@
     {
         width: 180px;
     }
-    
-
+    .credential-table-wrapper .table-wrapper tr td:first-child, .credential-table-wrapper .table-wrapper table tr td
+    {
+        min-width: 200px;
+    }
+    .status-toggle-switch button
+    {
+        width: 60px;
+    }
+    .rmdp-container .rmdp-wrapper
+    {
+        width: 290px;
+    }
+    .rmdp-container .rmdp-calendar
+    {
+        width: 100%;
+    }
+    .rmdp-wrapper .rmdp-day span,
+    .rmdp-wrapper .rmdp-week-day
+    {
+        font-size: 12px;
+    }
+    .tab-top-btn
+    {
+        display: none;
+    }
+    .mobile-user-header
+    {
+        display: block;
+    }
+    .edit-user-form .user-header
+    {
+        display: none;
+    }
+    .scheduling-btn h6
+    {
+        font-size: 14px;
+    }
+    .notes-tab-btn-col .nav
+    {
+        display: none;
+    }
+    .notes-tab .tab-pane
+    {
+        display: block;
+        opacity: 1;
+    }
+    .notes-tab-content-col
+    {
+        padding-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .notes-tab-header
+    {
+        width: 100%;
+    }
 }
 @media(max-width:575px)
 {
@@ -709,7 +809,7 @@
     }
     .edit-user-form input.form-control,
     .add-user-popup input.form-control,
-    .add-user-popup input.rmdp-input
+    .date-of-birth-input input.rmdp-input
     {
         height: 42px;
         padding: 10px 15px;
@@ -720,7 +820,8 @@
         height: 42px;
         font-size: 14px;
     }
-    .edit-user .edit-user-top, .edit-user .edit-user-bottom
+    .edit-user .edit-user-top, .edit-user .edit-user-bottom,
+    .edit-user .credential-wrapper
     {
         padding-bottom: 20px;
         margin-bottom: 20px;
@@ -738,6 +839,14 @@
     .add-user-popup .modal-body
     {
         padding: 20px;
+    }
+    .credential-table-wrapper
+    {
+        padding: 15px;
+    }
+    .edit-user-form .custom-dropdown .dropdown-toggle.btn
+    {
+        height: 42px;
     }
 }
 @media(max-width:374px)

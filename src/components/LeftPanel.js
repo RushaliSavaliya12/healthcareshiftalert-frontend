@@ -30,7 +30,7 @@ const LeftPanel = () => {
             menuText: "FeedBack & Ratings"
         },
         {
-            LinkUrl: "/manage-users",
+            LinkUrl: RoutesPath.manageUser,
             imageWhite: "assets/images/ico/panel-icon/user.svg",
             imageBlue: "assets/images/ico/panel-icon/user-filled.svg",
             menuText: "Manage users"
@@ -53,13 +53,13 @@ const LeftPanel = () => {
             menuText: "Add Paycard"
         },
         {
-            LinkUrl: "/notes",
+            LinkUrl: RoutesPath.notes,
             imageWhite: "assets/images/ico/panel-icon/notes.svg",
             imageBlue: "assets/images/ico/panel-icon/notes-filled.svg",
             menuText: "Notes"
         },
         {
-            LinkUrl: "/workforce-calculator",
+            LinkUrl: RoutesPath.workforceCalculator,
             imageWhite: "assets/images/ico/panel-icon/calculator.svg",
             imageBlue: "assets/images/ico/panel-icon/calculator.svg",
             menuText: "Workforce Calculator"

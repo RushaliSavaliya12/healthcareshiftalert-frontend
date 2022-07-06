@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { Tabs, Tab, Row, } from 'react-bootstrap';
 import AddFacilityPopup from './AddFacilityPopup';
 import SearchInput from './SearchInput';
 import CustomDropdown from './CustomDropdown';

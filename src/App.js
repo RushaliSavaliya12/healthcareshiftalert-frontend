@@ -10,7 +10,8 @@ import Dashboard from './pages/Dashboard';
 import ManageUser from './pages/ManageUser';
 import ManageFacilityEdit from './pages/ManageFacilityEdit';
 import ManageCliniciansEdit from './pages/ManageCliniciansEdit';
-
+import WorkforceCalculator from './pages/WorkforceCalculator';
+import Notes from './pages/Notes';
 
 export const RoutesPath = {
   indexURL: '/',
@@ -19,6 +20,8 @@ export const RoutesPath = {
   manageUser: '/manage-users',
   managefacilityEdit: '/edit-facility',
   managecliniciansEdit: '/edit-clinicians',
+  workforceCalculator:'/workforce-calculator',
+  notes:'/notes',
 }
 
 function App() {
@@ -31,6 +34,8 @@ function App() {
       <Route path={RoutesPath.manageUser} element={<ManageUser />} />
       <Route path={RoutesPath.managefacilityEdit} element={<ManageFacilityEdit />} />
       <Route path={RoutesPath.managecliniciansEdit} element={<ManageCliniciansEdit />} />
+      <Route path={RoutesPath.workforceCalculator} element={<WorkforceCalculator />} />
+      <Route path={RoutesPath.notes} element={<Notes />} />
     </Routes>
   );
 }
