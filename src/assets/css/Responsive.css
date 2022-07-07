@@ -395,6 +395,10 @@
     {
         margin-top: 20px;
     }
+    .calculate-btn .btn
+    {
+        width: auto;
+    }
     
 }
 @media(max-width:767px)
@@ -683,6 +687,36 @@
     {
         font-size: 14px;
     }
+    .calc-main-row .cost-label
+    {
+        flex: 0 0 100px;
+        max-width: 100px;
+    }
+    .calc-main-row .col-md-6
+    {
+        flex: 0 0 calc(50% - 50px);
+        max-width: calc(50% - 50px);
+    }
+    .workforce-calc-inner .calc-top-row
+    {
+        margin-left: 100px;
+    }
+    .calc-top-row .cost-col
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+        
+    }
+    .calc-main-row .cost-label
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .calc-main-row .col-md-12
+    {
+        flex: 0 0 calc(100% - 100px);
+        max-width: calc(100% - 100px);
+    }
 }
 @media(max-width:575px)
 {
@@ -889,6 +923,58 @@
     .edit-user-form .custom-dropdown .dropdown-toggle.btn
     {
         height: 42px;
+    }
+    .workforce-calc-inner .calc-top-row
+    {
+        margin-left: 0;
+    }
+    .workforce-calc-single
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .calc-top-row .cost-col
+    {
+        padding: 8px 10px;
+    }
+    .calc-top-row span, .calc-main-row .cost-label span
+    {
+        font-size: 12px;
+    }
+    .calc-main-row .cost-label
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .calc-main-row .col-md-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .calc-main-row
+    {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .calc-main-row .cost-label span{
+        color: var(--placeHolderColor);
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .calc-main-row .col-md-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .calc-main-row .cost-col span
+    {
+        font-size: 12px;
     }
 }
 @media(max-width:374px)

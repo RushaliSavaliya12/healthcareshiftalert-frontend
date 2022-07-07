@@ -73,7 +73,7 @@ const WorkforceCalculatorSection = (props) => {
                                 <Col md={6} className="cost-col">
                                     <input type="number" name='number' />
                                 </Col>
-                                <Col md={6}>
+                                <Col md={6} className="cost-col">
                                     <input type="number" name='number' />
                                 </Col>
                             </Row>
@@ -92,8 +92,15 @@ const WorkforceCalculatorSection = (props) => {
                                 </div>
                                 <Col md={12} className="cost-col">
                                     <input type="number" name='number' />
+                                    <span>To calculate the annual savings impact of a variable workforce, enter the number of employees to be converted below.</span>
                                 </Col>
-                                <span>To calculate the annual savings impact of a variable workforce, enter the number of employees to be converted below.</span>
+
+                            </Row>
+                            <Row className="calc-main-row">
+                                <Col md={12} className="cost-col">
+                                    <input type="number" name='number' />
+                                </Col>
+
                             </Row>
                             <Row className="calc-main-row">
                                 <div className='cost-label'>

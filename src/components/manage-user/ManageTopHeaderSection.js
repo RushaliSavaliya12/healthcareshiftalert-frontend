@@ -5,7 +5,7 @@ import MessagesButton from '../inner-components/MessagesButton';
 import { RoutesPath } from '../../App';
 
 
-const WorkforceTopHeaderSection = (props) => {
+const ManageTopHeaderSection = (props) => {
     return (
         <>
             <div className='dashboard-top-wrapper'>
@@ -25,4 +25,4 @@ const WorkforceTopHeaderSection = (props) => {
     )
 }
 
-export default WorkforceTopHeaderSection;
+export default ManageTopHeaderSection;

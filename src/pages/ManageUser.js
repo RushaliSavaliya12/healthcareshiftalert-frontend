@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import LeftPanel from "../components/LeftPanel";
 import HeaderMobile from "../components/HeaderMobile";
 import ManageTopHeaderSection from "../components/manage-user/ManageTopHeaderSection";
 import ManageUserTopFilterSection from "../components/manage-user/ManageUserTopFilterSection";
+import TabRelatedTitleChange from '../components/inner-components/TabRelatedTitleChange';
 import { Row, Col } from 'react-bootstrap';
 
 const ManageUser = () => {
+
+    useEffect(() => {
+        TabRelatedTitleChange();
+    });
+
     return (
         <>
             <main className='app-main'>
