@@ -9,7 +9,7 @@ const NotesMainSection = (props) => {
         viewNoteChange();
         addNoteChange();
     });
-    const [key, setKey] = useState('home');
+   
 
     const notesData =
         [
