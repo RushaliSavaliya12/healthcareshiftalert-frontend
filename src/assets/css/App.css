@@ -1587,7 +1587,6 @@ input.form-control {
     width: 0;
     height: 0;
 }
-
 .switch-toggle {
     position: absolute;
     cursor: pointer;
@@ -1600,7 +1599,6 @@ input.form-control {
     transition: .4s cubic-bezier(0, 1, 0.5, 1);
     border-radius: 4px;
     border-radius: 34px;
-
 }
 
 .switch-toggle:before {
@@ -1624,7 +1622,6 @@ input.form-control {
 .switch input:focus+.switch-toggle {
     box-shadow: 0 0 4px var(--primaryColor);
 }
-
 input:checked+.slider:before {
     -webkit-transform: translateX(18px);
     -ms-transform: translateX(18px);
@@ -2648,4 +2645,35 @@ input:checked+.slider:before {
    margin-right: 14px;
    margin-left: 10px;
    line-height: 1.4;
+}
+.quill .ql-container
+{
+    min-height: 300px;
+}
+.edit-note
+{
+    display: none;
+}
+.edit-note.show
+{
+    display: block;
+}
+.edit-note button
+{
+    font-size: 16px;
+    float: right;
+    margin-top: 20px;
+}
+.add-note-header
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+.add-note-header h4
+{
+    margin-bottom: 0;
+}
+.add-note-header .note-close-btn
+{
+    margin-top: 0;
 }

@@ -641,6 +641,48 @@
     {
         width: 100%;
     }
+    .notes-tab .accordion-button:after
+    {
+        display:none
+    }
+    .notes-tab .accordion-button
+    {
+        border: 1px solid var(--primaryBorderColor);
+        border-radius: 12px!important;
+    }
+    .notes-tab .tab-pane
+    {
+        margin-bottom: 20px;
+    }
+    .notes-tab .accordion-button[aria-expanded="true"]
+    {
+        border-color: #F2F5FC;   
+    }
+    .notes-tab .accordion-body
+    {
+        
+        padding-bottom: 10px;
+        position: relative;
+    }
+    .notes-tab .view-note
+    {   
+        padding-top: 100px;
+    }
+    .tab-content .date-text
+    {
+        left: 0;
+    }
+    .edit-note button.btn
+    {
+        float: none;
+    }
+    .tab-content .edit-note{
+        padding-top: 10px;
+    }
+    .notes-tab-text
+    {
+        font-size: 14px;
+    }
 }
 @media(max-width:575px)
 {

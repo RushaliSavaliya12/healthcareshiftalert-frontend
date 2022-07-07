@@ -1,0 +1,155 @@
+/* Timesheets CSS start */
+.dashboard-row-main .right-content-col-with-banner {
+    padding: 0;
+    overflow: hidden;
+}
+.right-content-col-with-banner .dashboard-top-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px 40px 30px 40px;
+}
+.right-content-col-with-banner .dashboard-top-wrapper .h2,
+.right-content-col-with-banner .dashboard-top-wrapper .h4 {
+    color: #fff;
+}
+.right-content-col-with-banner .dashboard-top-wrapper .h4 {
+    margin-bottom: 0;
+}
+.right-content-col-with-banner .top-dropdown-col .btn-square {
+    background-color: #7D888C;
+    border-color: #7D888C;
+    color: #fff;
+}
+.right-content-col-with-banner .top-dropdown-col .btn-square:hover {
+    border-color: var(--primaryColor);
+}
+.timesheets-main-section {
+    padding: 20px 40px 30px;
+}
+.timesheets-main-section .search-input-wrap {
+    flex: 0 0 50%;
+    max-width: 368px;
+    top: auto;
+    max-height: 44px;
+}
+.timesheets-main-section .table-wrapper table th {
+    border-bottom: none;
+    background-color: #F2F5FC;
+}
+.timesheets-main-section .table-wrapper table thead th:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 29px;
+}
+.timesheets-main-section .table-wrapper table thead th:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.table-wrapper table tr td.employee-name-td {
+    min-width: 180px;
+}
+.table-wrapper table tr td.clock-in-td,
+.table-wrapper table tr td.clock-out-td {
+    min-width: 150px;
+}
+.table-wrapper table tr td.note-td,
+.table-wrapper table tr td.reviews-td {
+    min-width: 220px;
+}
+.btn.btn-outline-primary.btn-without-icon {
+    padding: 5px 15px;
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    font-size: 16px;
+}
+.btn.btn-outline-primary.btn-without-icon:hover,
+.btn.btn-outline-primary.btn-without-icon:focus {
+    color: #fff;
+    background-color: var(--primaryColor);
+}
+.dropdown-with-checkbox .dropdown-item {
+    display: flex;
+    align-items: center;
+}
+.dropdown-with-checkbox .dropdown-item input {
+    margin-right: 5px;
+}
+span.status-tag.Pending {
+    background-color: #FFF0E0;
+    color: #ff9429;
+}
+span.status-tag.Approved {
+    color: #8ea80f;
+    background-color: #e7f6e7;
+}
+.add-user-pop-wrap .small-btn {
+    padding: 6px 15px;
+    border-radius: 12px;
+    min-width: 136px;
+}
+.add-user-pop-wrap .outline-success {
+    color: #0ea80f;
+    border-color: #0ea80f;
+}
+.add-user-pop-wrap .outline-success:hover,
+.add-user-pop-wrap .outline-success:focus {
+    background-color: #0ea80f;
+    box-shadow: none;
+    color: #fff;
+    outline: none;
+}
+.note-popup .modal-dialog {
+    min-width: 440px;
+}
+textarea.form-control {
+    padding: 16px 20px;
+    height: 168px;
+    border: 1px solid var(--primaryBorderColor);
+    color: var(--textColor);
+    border-radius: 12px;
+    font-size: 16px;
+}
+.note-popup .form-row {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+.reviews-disable .btn.small-btn {
+    color: #989BA5;
+    border-color: #989BA5;
+    pointer-events: none;
+}
+.react-rater-star {
+    background-image: url(../images/star.png);
+    background-position: center;
+    font-size: 0;
+    width: 38px;
+    height: 38px;
+    padding: 0 2px;
+    background-size: 34px auto;
+    background-repeat: no-repeat;
+}
+.rate-popup .react-rater-star, 
+.react-rater-star.will-be-active {
+    background-image: url(../images/star-yellow.png);
+}
+.react-rater-star.is-active {
+    background-image: url(../images/star-fill.png);
+}
+.react-rater-star.will-be-active,
+.react-rater-star.is-active {
+    color: #f5ca32;
+}
+.react-rater {
+    display: flex;
+    margin-top: 10px;
+}
+.reviews-td .react-rater {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.reviews-td .react-rater-star {
+    width: 22px;
+    height: 22px;
+    background-size: 20px auto;
+}
+/* Timesheets CSS end */

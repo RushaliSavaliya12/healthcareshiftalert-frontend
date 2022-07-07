@@ -12,6 +12,8 @@ import ManageFacilityEdit from './pages/ManageFacilityEdit';
 import ManageCliniciansEdit from './pages/ManageCliniciansEdit';
 import WorkforceCalculator from './pages/WorkforceCalculator';
 import Notes from './pages/Notes';
+import Timesheets from './pages/Timehseets';
+
 
 export const RoutesPath = {
   indexURL: '/',
@@ -22,6 +24,7 @@ export const RoutesPath = {
   managecliniciansEdit: '/edit-clinicians',
   workforceCalculator:'/workforce-calculator',
   notes:'/notes',
+  timesheets: '/timesheets'
 }
 
 function App() {
@@ -36,6 +39,7 @@ function App() {
       <Route path={RoutesPath.managecliniciansEdit} element={<ManageCliniciansEdit />} />
       <Route path={RoutesPath.workforceCalculator} element={<WorkforceCalculator />} />
       <Route path={RoutesPath.notes} element={<Notes />} />
+      <Route path={RoutesPath.timesheets} element={<Timesheets />} />
     </Routes>
   );
 }

@@ -4,6 +4,11 @@ import TextEditorBox from '../inner-components/TextEditorBox';
 import SearchInput from '../inner-components/SearchInput';
 
 const NotesMainSection = (props) => {
+
+    useEffect(() => {
+        viewNoteChange();
+        addNoteChange();
+    });
     const [key, setKey] = useState('home');
 
     const notesData =
@@ -111,6 +116,33 @@ const NotesMainSection = (props) => {
 
         ]
 
+    const viewNoteChange = () => {
+        const EditBtn = document.querySelectorAll('.edit-note-btn');
+        [].forEach.call(EditBtn, function (item) {
+            item.onclick = function () {
+                const editNote = item.parentNode.querySelector('.edit-note');
+                const viewNote = item.parentNode.querySelector('.view-note');
+                editNote.classList.add('show');
+                viewNote.classList.add('hide');
+                item.classList.add('hide');
+            }
+        });
+
+
+    }
+    const addNoteChange = () => {
+        const addNewBtn = document.querySelector('.add-note-btn');
+        const addNewNote = document.querySelector('.add-note');
+        const closeNoteBtn = document.querySelector('.note-close-btn');
+        addNewBtn.onclick = function () {
+            addNewNote.classList.add('show');
+            addNewNote.nextElementSibling.classList.add('hide');
+        }
+        closeNoteBtn.onclick = function () {
+            addNewNote.classList.remove('show');
+            addNewNote.nextElementSibling.classList.remove('hide');
+        }
+    }
 
     return (
         <>
@@ -150,6 +182,21 @@ const NotesMainSection = (props) => {
                                     </div>
                                 </Col>
                                 <Col md={8} className="notes-tab-content-col">
+                                    <div className='add-note edit-note'>
+                                        <form>
+                                            <div className='form-inner'>
+                                                <div className="add-note-header">
+                                                <h4>Add new note</h4>
+                                                <button type='button' className="close-btn note-close-btn"></button>
+                                                </div>
+                                                
+                                                <div className='editor-wrapper'>
+                                                    <TextEditorBox editorValue="" />
+                                                    <button className='btn btn-primary'>Add Note</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                     <Tab.Content>
                                         <Accordion defaultActiveKey="1">
                                             {notesData.map((val, index) =>
@@ -180,7 +227,8 @@ const NotesMainSection = (props) => {
                                                                 <div className='edit-note'>
                                                                     <form>
                                                                         <div className='form-inner'>
-                                                                            <TextEditorBox />
+                                                                            <TextEditorBox editorValue={val.FullNoteDatap1} />
+                                                                            <button className='save-changes-btn btn btn-primary'>Save changes</button>
                                                                         </div>
                                                                     </form>
                                                                 </div>
