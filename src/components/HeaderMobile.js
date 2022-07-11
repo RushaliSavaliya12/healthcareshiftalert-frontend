@@ -25,6 +25,12 @@ const HeaderMobile = () => {
             LeftPanelMenuHeader.classList.remove('show');
             document.body.classList.remove('modal-open');
         }
+
+        LeftPanelMenuHeader.onclick = function () {  
+            LeftPanelMenuHeader.classList.remove('show');
+            document.body.classList.remove('modal-open');
+        }
+
     }
 
     const StickyMobileHeader = () =>{
@@ -55,7 +61,7 @@ const HeaderMobile = () => {
                     <Navbar collapseOnSelect expand="lg">
 
                         <Navbar.Brand href="/">
-                            <img src='assets/images/healthcare-mobile-logo.svg' alt="" />
+                            <img src='assets/images/ShiftAlerts_Logo_white.svg' alt="" />
                         </Navbar.Brand>
                         <div className='header-right right-col-wrap top-dropdown-col'>
                             <Notification />

@@ -10,8 +10,16 @@ const AddFacilityPopup = (props) => {
 
     const [show, setShow] = useState(false);
 
+    
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+
+    // Form validation
+
+
+   
 
     return (
 
@@ -39,32 +47,32 @@ const AddFacilityPopup = (props) => {
                                 </Row>
                                 <Row className='form-row'>
                                     <Col md={6}>
-                                        <InputGroupForm inputId="pocFirstName" inputLabel="POC Firstname" inputType="text" inputPlaceholder="Text here" inputName="pocFirstName"/>
+                                        <InputGroupForm inputId="pocFirstName" inputLabel="POC Firstname" inputType="text" inputPlaceholder="Text here" inputName="pocFirstName" />
                                     </Col>
                                     <Col md={6}>
-                                        <InputGroupForm inputId="pocLastName" inputLabel="POC Lastname" inputType="text" inputPlaceholder="Text here" inputName="pocLastName"/>
+                                        <InputGroupForm inputId="pocLastName" inputLabel="POC Lastname" inputType="text" inputPlaceholder="Text here" inputName="pocLastName" />
                                     </Col>
                                     <Col md={6}>
-                                        <InputGroupForm inputId="PocPosition" inputLabel="POC position" inputType="text" inputPlaceholder="Text here" inputName="PocPosition"/>
+                                        <InputGroupForm inputId="PocPosition" inputLabel="POC position" inputType="text" inputPlaceholder="Text here" inputName="PocPosition" />
                                     </Col>
                                     <Col md={6}>
-                                        <InputGroupForm inputId="Mainline" inputLabel="Mainline" inputType="text" inputPlaceholder="Text here" inputName="Mainline"/>
+                                        <InputGroupForm inputId="Mainline" inputLabel="Mainline" inputType="text" inputPlaceholder="Text here" inputName="Mainline" />
                                     </Col>
                                     <Col md={12}>
-                                        <InputGroupForm inputId="FacilityName" inputLabel="Facility Name" inputType="text" inputPlaceholder="Text here" inputName="FacilityName"/>
+                                        <InputGroupForm inputId="FacilityName" inputLabel="Facility Name" inputType="text" inputPlaceholder="Text here" inputName="FacilityName" />
                                     </Col>
                                     <Col md={12}>
-                                        <InputGroupForm inputId="Address" inputLabel="Address" inputType="text" inputPlaceholder="Text here" inputName="Address"/>
+                                        <InputGroupForm inputId="Address" inputLabel="Address" inputType="text" inputPlaceholder="Text here" inputName="Address" />
                                     </Col>
                                 </Row>
                                 <div className='submit-btn'>
-                                    <input type="submit" value="Submit" className="btn btn-primary"/>
+                                    <input type="submit" value="Submit" className="btn btn-primary" />
                                 </div>
                             </div>
                         </Form>
                     </div>
                 </Modal.Body>
-            
+
             </Modal>
         </div>
 

@@ -1715,7 +1715,7 @@ input:checked+.slider:before {
 
 .table-search-filter input[type="search"] {
     border: none;
-    height: 44px;
+    height: 44px!important;
     border-radius: 12px;
 }
 
@@ -1750,7 +1750,7 @@ input:checked+.slider:before {
     margin-top: 28px;
 }
 
-.user-facilty-table-wrapper {
+.pagination-table {
     background-color: #fff;
     border-radius: 24px;
     padding-bottom: 24px;
@@ -2295,7 +2295,10 @@ input:checked+.slider:before {
 .credential-table-wrapper .table-wrapper table tr td {
     width: 300px;
 }
-
+.credential-table-wrapper .table-wrapper table tr td:last-child
+{
+    min-width: 200px;
+}
 .credential-table-wrapper .table-wrapper table th {
     background-color: #F2F5FC;
 }
@@ -2464,7 +2467,7 @@ input:checked+.slider:before {
     display: none;
 }
 
-.mobile-user-header {
+.edit-user-wrapper .mobile-user-header {
     display: none;
 }
 
@@ -2478,6 +2481,7 @@ input:checked+.slider:before {
     height: 44px;
     border: 1px solid#C9CACF;
     border-radius: 12px;
+    width: 100%;
 }
 
 .notes-top-header .top-header-inner {
@@ -2776,4 +2780,227 @@ input:checked+.slider:before {
     display: block;
     margin: auto;
     margin-top: 12px;
+}
+.table-search-filter input[type="search"]
+{
+    width: 360px;
+}
+.document-table .table-wrapper
+{
+    padding: 24px
+}
+.document-table .table-wrapper table th
+{
+    padding: 16px;
+    border-bottom: none;
+    background-color: #F2F5FC;
+}
+.document-table .table-wrapper table th:first-child
+{
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.document-table .table-wrapper table th:last-child
+{
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.document-table .table-wrapper table td
+{
+    padding: 14px 16px;
+    border-bottom: 0;
+    color: var(--textColor);
+}
+.document-table .table-wrapper table tr:first-child td
+{
+    padding-top: 24px;
+}
+.clinincians-user-name
+{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.clinincians-user-name .clinicians-image-thumbnail
+{
+    flex: 0 0 48px;
+    max-width: 48px;
+}
+
+.clinincians-user-name span
+{
+    flex: 0 0 calc(100% - 48px);
+    max-width: calc(100% - 48px);
+    font-weight: 600;
+    padding-left: 16px;
+}
+.document-table .table-wrapper tr td:first-child
+{
+    min-width: 250px;
+    width: auto;
+}
+.document-table .table-wrapper table td:nth-child(2)
+{
+    min-width: 150px;
+}
+.document-table .table-wrapper table td
+{
+    min-width: 180px;
+}
+.document-table .table-wrapper table td:last-child
+{
+    min-width: 240px
+}
+.document-table .file-data
+{
+    padding-left: 21px;
+    position: relative;
+    color: #F5CA32;
+}
+.document-table .file-data::before
+{
+    content: '\e924';
+    font-family: 'cutomIcon' !important;
+    position: absolute;
+    left: 0;
+    color: var(--placeHolderColor);
+    top: 0;
+}
+.document-table .border-btn
+{
+    background-color: transparent;
+    font-size: 16px;
+    padding: 8px 48px;
+    color: var(--primaryColor);
+}
+.document-table .border-btn:hover
+{
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+.document-details-wrap .user-header .sub-header
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.document-details-wrap .sub-header span
+{
+    color: var(--placeHolderColor);
+}
+.document-details-wrap .rate-feedback-text .rate-text
+{
+    display: inline-block;
+
+}
+.document-details-wrap .rate-feedback-text
+{
+    margin-top: 9px;
+}
+.document-details-wrap .rate-feedback-text .rate-text
+{
+    font-size: 18px;
+}
+.document-details-wrap .sub-header span.rating-text
+{
+    color: var(--textColor);
+}
+.rate-text svg
+{
+    max-width: 20px;
+    vertical-align: middle;
+}
+.rate-text span
+{
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.feedback-count-text
+{
+    vertical-align: middle;
+    font-size: var(--smallFontSize);
+    margin-left: 8px;
+}
+.document-detail-row .detail-text svg path,
+.document-detail-row .detail-text svg
+{
+    fill: var(--placeHolderColor);
+}
+.document-detail-row .detail-text svg
+{
+    width:20px;
+    margin-right: 10px;
+}
+.document-detail-row .detail-col
+{
+    margin-top: 18px;
+}
+.document-detail-row
+{
+    padding-right: 8vw;
+}
+.edit-user-form .document-detail-row .user-header
+{
+    margin-bottom: 40px;
+}
+.edit-user .edit-user-top .document-details-wrap
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.document-details-wrap .detail-text
+{
+    font-size: var(--smallFontSize);
+}
+.document-detail-section .page-title,
+.edit-profile-section .page-title
+{
+    margin-bottom: 0;
+}
+.change-password-popup .modal-dialog
+{
+    min-width: 480px;
+    max-width: 480px;
+}
+.change-password-popup .modal-content
+{   
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
+}
+.change-password-popup .modal-header
+{
+    padding: 24px;
+    border-bottom:  1px solid #F2F5FC;
+}
+.change-password-popup .modal-header h5
+{
+    margin-bottom: 0;
+}
+.change-password-popup input.form-control
+{
+    height: 48px;
+    padding: 14px 20px;
+}
+.change-password-popup .modal-body
+{
+    padding: 24px 24px 32px;
+}
+.change-password-popup .form-label
+{
+    font-size: var(--smallFontSize);
+}
+.new-password-group .form-group
+{
+    margin-bottom: 20px;
+}
+.new-password-group .form-group:nth-child(2) .form-label
+{
+    display: none;
+}
+.change-password-popup .submit-btn .btn
+{
+    display: block;
+    margin-top: 48px;
+    width: 100%;
 }

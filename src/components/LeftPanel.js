@@ -41,7 +41,7 @@ const LeftPanel = () => {
             menuText: "Statistics"
         },
         {
-            LinkUrl: "/documents",
+            LinkUrl: RoutesPath.documents,
             imageWhite: "assets/images/ico/panel-icon/document.svg",
             imageBlue: "assets/images/ico/panel-icon/document-filled.svg",
             menuText: "Documents"
@@ -71,7 +71,7 @@ const LeftPanel = () => {
                 <div className='left-panel-wrap'>
                     <Navbar.Brand href={RoutesPath.dashboard}>
                         <figure>
-                            <img src='assets/images/healthcare-logo.svg' alt="App Logo" />
+                            <img src='assets/images/ShiftAlerts_Logo_white.svg' alt="App Logo" />
                         </figure>
                     </Navbar.Brand>
                     <Navbar.Collapse id="dashboard-nav">

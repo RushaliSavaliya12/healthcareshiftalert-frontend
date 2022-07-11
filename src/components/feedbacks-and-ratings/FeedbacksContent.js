@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import SearchInput from '../inner-components/SearchInput';
 import DropdownWithCheckbox from '../inner-components/DropdownWithCheckbox';
-import TimesheetsTable from '../inner-components/TimesheetsTable';
+import Feedbackstable from '../inner-components/Feedbackstable';
 import TablePagination from '../inner-components/TablePagination';
 
 const PositionsFilter = [
@@ -13,23 +13,21 @@ const PositionsFilter = [
     { value: 'rnlpn', label: 'RN/LPN' }
 ]
 
-const TimesheetsContent = (props) => {
+const FeedbacksContent = (props) => {
 
 
     return (
 
         <div className='facility-tab-content tab-content-wrap'>
-            <div className='d-flex flex-column flex-md-row justify-content-md-between filter-row-wrapper'>
+            <div className='d-flex justify-content-between filter-row-wrapper'>
                 <SearchInput />
-                <div className='table-filter-row table-filter-timesheets-row justify-content-start justify-content-md-end'>
-                    {/* <AddUserButton ModelTitle="Approve All"/> */}
-                    <Button className="btn-without-icon border-btn" variant="outline-primary">Approve All</Button>
+                <div className='table-filter-row table-filter-timesheets-row'>
                     <DropdownWithCheckbox optionData={PositionsFilter} dropClass="without-search" />
                 </div>
             </div>
-            <div className='user-facilty-table-wrapper pagination-table'>
+            <div className='user-facilty-table-wrapper flex-table pagination-table'>
                 <div className="table-wrapper table-responsive">
-                    <TimesheetsTable />
+                    <Feedbackstable />
                 </div>
                 <TablePagination />
             </div>
@@ -40,4 +38,4 @@ const TimesheetsContent = (props) => {
 }
 
 
-export default TimesheetsContent;
+export default FeedbacksContent;

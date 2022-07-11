@@ -13,7 +13,10 @@ import ManageCliniciansEdit from './pages/ManageCliniciansEdit';
 import WorkforceCalculator from './pages/WorkforceCalculator';
 import Notes from './pages/Notes';
 import Timesheets from './pages/Timehseets';
-
+import Documents from './pages/Documents';
+import DocumentDetails from './pages/DocumentDetails';
+import EditProfile from './pages/EditProfile';
+import FeedbacksAndRatings from './pages/FeedbacksAndRatings';
 
 export const RoutesPath = {
   indexURL: '/',
@@ -24,7 +27,11 @@ export const RoutesPath = {
   managecliniciansEdit: '/edit-clinicians',
   workforceCalculator:'/workforce-calculator',
   notes:'/notes',
-  timesheets: '/timesheets'
+  timesheets: '/timesheets',
+  documents:'/documents',
+  documentsDetails:'/document-details',
+  editProfile:'/edit-profile',
+  feedbackratings:'/feedback-ratings'
 }
 
 function App() {
@@ -38,8 +45,12 @@ function App() {
       <Route path={RoutesPath.managefacilityEdit} element={<ManageFacilityEdit />} />
       <Route path={RoutesPath.managecliniciansEdit} element={<ManageCliniciansEdit />} />
       <Route path={RoutesPath.workforceCalculator} element={<WorkforceCalculator />} />
-      <Route path={RoutesPath.notes} element={<Notes />} />
       <Route path={RoutesPath.timesheets} element={<Timesheets />} />
+      <Route path={RoutesPath.notes} element={<Notes />} />
+      <Route path={RoutesPath.documents} element={<Documents />} />
+      <Route path={RoutesPath.documentsDetails} element={<DocumentDetails />} />
+      <Route path={RoutesPath.editProfile} element={<EditProfile />} />
+      <Route path={RoutesPath.feedbackratings} element={<FeedbacksAndRatings />} />
     </Routes>
   );
 }

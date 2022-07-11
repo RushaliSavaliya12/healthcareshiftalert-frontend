@@ -135,7 +135,7 @@
     }
     .edit-user-footer .btn-wrap .btn
     {
-        width: 250px;
+        width: 270px;
     }
     .tab-content .date-text
     {
@@ -399,6 +399,19 @@
     {
         width: auto;
     }
+    .document-detail-row
+    {
+        padding-right: 0;
+    }
+    .dashboard-top-wrapper .top-dropdown-col
+    {
+        display: none;
+    }
+    .mobile-header .navbar-brand img
+    {
+        max-width: 200px;
+        width: 100%;
+    }
     
 }
 @media(max-width:767px)
@@ -588,6 +601,7 @@
     .edit-user-footer .btn-wrap .btn
     {
         width: 180px;
+        font-size: 14px;
     }
     .credential-table-wrapper .table-wrapper tr td:first-child, .credential-table-wrapper .table-wrapper table tr td
     {
@@ -716,6 +730,49 @@
     {
         flex: 0 0 calc(100% - 100px);
         max-width: calc(100% - 100px);
+    }
+    .document-table .table-wrapper table td:nth-child(2)
+    {
+        min-width: 100px;
+    }
+    .document-table .table-wrapper table td
+    {
+        min-width: 140px;
+    }
+    .document-table .table-wrapper table td:last-child
+    {
+        min-width: 180px;
+    }
+    .document-table .border-btn
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: var(--smallFontSize);
+    }
+    .document-table .table-wrapper
+    {
+        padding: 15px;
+    }
+    .table-search-filter input[type="search"]
+    {
+        width: 250px;
+    }
+    .table-filter-row .custom-dropdown
+    {
+        margin-left: 10px;
+    }
+    .document-details-wrap.edit-user-form .user-header
+    {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .document-details-wrap .user-header .border-btn
+    {
+        padding: 12px;
+    }
+    .mobile-header .navbar-brand img
+    {
+        max-width: 150px;
     }
 }
 @media(max-width:575px)
@@ -976,6 +1033,31 @@
     {
         font-size: 12px;
     }
+    .table-search-filter input[type="search"]
+    {
+        width: 100%;
+    }
+    .document-details-wrap .user-header .border-btn
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .change-password-popup .modal-dialog
+    {
+        min-width: 90%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .change-password-popup .submit-btn .btn
+    {
+        margin-top: 30px;
+    }
+    .mobile-header .navbar-brand img
+    {
+        max-width: 140px;
+    }
+    
 }
 @media(max-width:374px)
 {

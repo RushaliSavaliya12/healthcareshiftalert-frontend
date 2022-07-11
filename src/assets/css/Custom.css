@@ -153,3 +153,147 @@ textarea.form-control {
     background-size: 20px auto;
 }
 /* Timesheets CSS end */
+
+/* Feedbacks & Ratings CSS start */
+.clinician-info {
+    display: flex;
+    align-items: center;
+}
+.clinician-info img {
+    max-width: 48px;
+    margin-right: 15px;
+}
+.clinician-info h6 {
+    margin: 0;
+}
+.ratings-td .react-rater {
+    margin: 0;
+}
+.table-wrapper tr td.clinician-td {
+    max-width: 180px;
+}
+.table-wrapper table tr td.ratings-td {
+    max-width: 145px;
+}
+.react-rater .react-rater-star {
+    width: 35px;
+    height: 35px;
+    background-size: 33px auto;
+}
+/* Feedbacks & Ratings CSS end */
+
+
+/* Responsive start  */
+
+@media screen and (max-width: 991px) {
+    .timesheets-main-section .search-input-wrap {
+        max-width: 250px;
+    }
+    .react-rater .react-rater-star {
+        width: 25px;
+        height: 25px;
+        background-size: 22px auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Feedbacks & Ratings CSS start */
+    .timesheets-main-section .search-input-wrap {
+        max-width: 100%;
+    }
+    /* .table-filter-timesheets-row {
+        margin-top: 15px;
+    } */
+    .table-filter-row .custom-dropdown {
+        margin-left: 15px;
+    }
+    .right-content-col-with-banner .dashboard-top-wrapper {
+        background-image: none !important;
+        padding: 0;
+    }
+    .right-content-col-with-banner .dashboard-top-wrapper .h2 {
+        color: #272B36;
+    }
+    .app-main .blue-bg-section,
+    .mobile-header {
+        background-color: #F2F5FC;
+    }
+    .right-content-col-with-banner .dashboard-top-wrapper .h2 {
+        color: #272B36;
+        margin: 0;
+    }
+    .right-content-col-with-banner .dashboard-top-wrapper .h4 {
+        display: none;
+    }
+    .timesheets-main-section {
+        padding: 20px 0px 30px;
+    }
+    .right-content-col-with-banner .right-col-wrap.top-dropdown-col {
+        margin: 0;
+    }
+    .table-filter-timesheets-row .custom-dropdown .dropdown-toggle {
+        background-color: transparent;
+        border: 1px solid #2753B8;
+        color: #2753B8;
+    }
+    .flex-table.pagination-table {
+        background-color: transparent;
+        border-radius: 0;
+    }
+    .flex-table .table-wrapper {
+        padding: 0;
+        border-radius: 0;
+    }
+    .flex-table thead {
+        display: none;
+    }
+    .flex-table table, 
+    .flex-table tbody {
+        display: block;
+        background-color: transparent;
+    }
+    .flex-table table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-table .table-wrapper table tr {
+        border-radius: 12px;
+        padding: 30px;
+        background-color: #fff;
+    }
+    .flex-table .table-wrapper table tr + tr {
+        margin-top: 30px;
+    }
+    .flex-table .table-wrapper table th, 
+    .flex-table .table-wrapper table td {
+        padding: 0 0 10px;
+        border-bottom: none;
+    }
+    .flex-table .table-wrapper tr td {
+        max-width: 100% !important;
+        width: 100% !important;
+        display: flex;
+        color: #545761;
+        font-weight: 400;
+        align-items: center;
+    }
+    .flex-table-image {
+        min-width: 35px;
+    }
+    .flex-table-image img {
+        min-width: 25px;
+    }
+    .flex-table-title {
+        color: #989ba5;
+        margin-right: 5px;
+    }
+    .flex-table .table-wrapper tr td.ratings-td {
+        align-items: center;
+    }
+    section.main-section.dashboard-section.flex-table-section.blue-bg-section {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+    }
+    /* Feedbacks & Ratings CSS end */
+}
