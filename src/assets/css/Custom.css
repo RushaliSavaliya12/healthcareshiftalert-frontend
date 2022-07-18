@@ -204,9 +204,9 @@ textarea.form-control {
     /* .table-filter-timesheets-row {
         margin-top: 15px;
     } */
-    .table-filter-row .custom-dropdown {
+    /* .table-filter-row .custom-dropdown {
         margin-left: 15px;
-    }
+    } */
     .right-content-col-with-banner .dashboard-top-wrapper {
         background-image: none !important;
         padding: 0;
@@ -214,10 +214,10 @@ textarea.form-control {
     .right-content-col-with-banner .dashboard-top-wrapper .h2 {
         color: #272B36;
     }
-    .app-main .blue-bg-section,
+    /* .app-main .blue-bg-section,
     .mobile-header {
         background-color: #F2F5FC;
-    }
+    } */
     .right-content-col-with-banner .dashboard-top-wrapper .h2 {
         color: #272B36;
         margin: 0;
@@ -290,7 +290,7 @@ textarea.form-control {
     .flex-table .table-wrapper tr td.ratings-td {
         align-items: center;
     }
-    section.main-section.dashboard-section.flex-table-section.blue-bg-section {
+    .dashboard-row-main .right-content-col-with-banner {
         padding-left: 24px;
         padding-right: 24px;
         padding-top: 24px;

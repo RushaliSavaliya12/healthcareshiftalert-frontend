@@ -774,6 +774,46 @@
     {
         max-width: 150px;
     }
+    .add-shift-popup .modal-dialog
+    {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .timesheets-main-section .filter-row-wrapper 
+    {
+        flex-wrap: wrap;
+    }
+    .timesheets-main-section .filter-row-wrapper  .search-input-wrap
+    {
+        margin-bottom: 20px;
+        flex: 0 0 100%;
+    }
+    .table-filter-timesheets-row
+    {
+        flex: 0 0 100%;
+    }
+    .timesheets-main-section .table-filter-row .custom-dropdown
+    {
+        margin-left: 0;
+    }
+    .add-user-popup.note-popup .modal-dialog
+    {
+        min-width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+    .table-filter-row .custom-dropdown
+    {
+        margin-left: 0;
+    }
+    .table-filter-timesheets-row .btn.btn-without-icon
+    {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
 }
 @media(max-width:575px)
 {
@@ -1057,7 +1097,24 @@
     {
         max-width: 140px;
     }
-    
+    .shift-input-wrap .form-group
+    {
+        flex: 0 0 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+    .shift-input-wrap .color-dropdown
+    {
+        flex: 0 0 40px;
+        max-width: 40px;
+    }
+    .custom-popup .modal-body
+    {
+        padding: 24px 15px;
+    }
+    .add-shift-popup .modal-dialog
+    {
+        max-width: 95%;
+    }
 }
 @media(max-width:374px)
 {

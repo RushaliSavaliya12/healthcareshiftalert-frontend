@@ -9,7 +9,7 @@ const Header = () =>{
                 <Container>
                     <div className='brand-logo'>
                         <figure>
-                            <img src='assets/images/healthcare-logo.svg' alt="App Logo"/>
+                            <img src='assets/images/ShiftAlerts_Logo_white.svg' alt="App Logo"/>
                         </figure>
                     </div>
                 </Container>

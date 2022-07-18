@@ -17,6 +17,7 @@ import Documents from './pages/Documents';
 import DocumentDetails from './pages/DocumentDetails';
 import EditProfile from './pages/EditProfile';
 import FeedbacksAndRatings from './pages/FeedbacksAndRatings';
+import Scheduling from './pages/Scheduling';
 
 export const RoutesPath = {
   indexURL: '/',
@@ -31,7 +32,8 @@ export const RoutesPath = {
   documents:'/documents',
   documentsDetails:'/document-details',
   editProfile:'/edit-profile',
-  feedbackratings:'/feedback-ratings'
+  feedbackratings:'/feedback-ratings',
+  scheduling:'/scheduling'
 }
 
 function App() {
@@ -51,6 +53,7 @@ function App() {
       <Route path={RoutesPath.documentsDetails} element={<DocumentDetails />} />
       <Route path={RoutesPath.editProfile} element={<EditProfile />} />
       <Route path={RoutesPath.feedbackratings} element={<FeedbacksAndRatings />} />
+      <Route path={RoutesPath.scheduling} element={<Scheduling />} />
     </Routes>
   );
 }
