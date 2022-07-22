@@ -18,6 +18,7 @@ import DocumentDetails from './pages/DocumentDetails';
 import EditProfile from './pages/EditProfile';
 import FeedbacksAndRatings from './pages/FeedbacksAndRatings';
 import Scheduling from './pages/Scheduling';
+import EditProfileHMCadmin from './pages/EditProfileHMCadmin';
 
 export const RoutesPath = {
   indexURL: '/',
@@ -33,7 +34,8 @@ export const RoutesPath = {
   documentsDetails:'/document-details',
   editProfile:'/edit-profile',
   feedbackratings:'/feedback-ratings',
-  scheduling:'/scheduling'
+  scheduling:'/scheduling',
+  editHMCadminProfile:'/edit-profile-hmc-admin'
 }
 
 function App() {
@@ -54,6 +56,7 @@ function App() {
       <Route path={RoutesPath.editProfile} element={<EditProfile />} />
       <Route path={RoutesPath.feedbackratings} element={<FeedbacksAndRatings />} />
       <Route path={RoutesPath.scheduling} element={<Scheduling />} />
+      <Route path={RoutesPath.editHMCadminProfile} element={<EditProfileHMCadmin />} />
     </Routes>
   );
 }

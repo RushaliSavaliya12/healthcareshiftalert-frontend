@@ -3485,4 +3485,8 @@ input:checked+.slider:before {
     color: red;
     font-size: var(--smallFontSize);
 }
+.edit-user-top .row>div.col-md-12:nth-last-child(2) .form-group
+{
+    margin-bottom: 20px;
+}
 /* Scheduling End*/
